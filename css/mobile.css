@@ -1,0 +1,125 @@
+@media screen and (max-width: 800px){
+	p{
+		font-size:19px;
+		line-height:2;
+	}
+	.main-title{
+		border-top: solid 1px black;
+		border-bottom:solid 1px black;
+		margin-top:60px;
+		margin-bottom:20px;
+	}
+	.main-title h1{
+		font-size:18px;
+	}
+	.image{
+		text-align:center;
+	}
+	img{
+		width:100%;
+	}
+	.container-box{
+		width:90%;
+		margin:0 auto;
+	}
+	.text{
+		margin:30px 0px 100px 0px;
+	}
+	.text-list{
+		border:solid 1px black;
+		font-weight:bold;
+		padding:10px 30px;
+	}
+	.background-yellow{
+		background-color:yellow;
+		font-weight:bold;
+	}
+	.font-bold{
+		font-weight:bold;
+	}
+	.sub-title{
+		border-top:1px solid black;
+		border-bottom:1px solid black;
+		border-right:1px solid black;
+		border-left:10px solid green;
+		padding:10px 30px;
+		margin:20px 0px;
+	}
+	.background-red{
+		background-color:red;
+		font-weight:bold;
+		color:white;
+	}
+	/* ボタン自体のstyle */
+	.button{
+		color: #fff;
+		background: #c9171e;
+		border-radius: 15px;
+		text-decoration: none;
+		width:100%;
+		margin:50px 0px;
+		text-align:center;
+		display: inline-block;
+	}
+	.button p{
+		font-size:40px;
+		font-weight:bold;
+	}
+	/* 光らせるためのstyle */
+	.shine{
+		border: 2px solid transparent;
+		position: relative;
+		overflow: hidden;
+	}
+	/* 光の疑似要素 */
+	.shine::before{
+		content: "";
+		animation: shine 2.5s cubic-bezier(0.25, 0, 0.25, 1) infinite;
+		background-color: #fff;
+		width: 140%;
+		height: 100%;
+		transform: skewX(-45deg);
+		top: 0;
+		left: -160%;
+		opacity: 0.5;
+		position: absolute;
+	}
+	/* 光の動き */
+	@keyframes shine{
+		0% {
+			left: -160%;
+			opacity: 0;
+		}
+		70% {
+			left: -160%;
+			opacity: 0.5;
+		}
+		71% {
+			left: -160%;
+			opacity: 1;
+		}
+		100% {
+			left: -20%;
+			opacity: 0;
+		}
+	}
+	.btn p{
+		font-size:30px;
+		color:white;
+		font-weight:bold;
+	}
+
+	.copyright{
+		text-align:center;
+	}
+	.copyright p{
+		font-size:15px;
+		font-weight:bold;
+	}
+	.work-info{
+		text-align: center;
+	}
+	.work-info p{
+		font-size:13px;
+	}
+}
