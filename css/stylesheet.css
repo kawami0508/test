@@ -121,6 +121,12 @@
 		font-size:15px;
 		font-weight:bold;
 	}
+	.work-link{
+		text-align:center;
+	}
+	.work-link a{
+		color:#555;
+	}
 	.work-info{
 		text-align: center;
 	}
